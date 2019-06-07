@@ -1,0 +1,259 @@
+.slideHead {
+	opacity: 0.8;
+}
+
+.welcome {
+	position: absolute;
+	width: 33%;
+	top: 40%;
+	left: 38%;
+	margin: auto;
+	font-family: 'alba';
+	color: black;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.backimg {
+	width: 102%;
+	height: 650px;
+	margin-top: -1.2%;
+	margin-left: -1%;
+	margin-right: -1%;
+}
+
+#themeMove {
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+	color: black;
+	height: auto;
+	display: inline-block;
+	animation-name: themeAni;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+@keyframes themeAni {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+.intro {
+
+}	
+
+.sidemain {
+	float: right;
+	width: 10%;
+	height: 20%;	
+
+	animation-name: side;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+@keyframes side {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+.side  {
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+	width: 100%;
+	height: 10%;
+	font-size: 80%;
+	border:  8px double #a9a9a9;
+	background-color: #dcdcdc;
+}
+
+
+#theme2 {
+	text-align: center;
+	margin-top: 3%;
+	font-size: 200%;
+}
+
+
+.content  {
+	width: 100%;
+	height: 10%;	
+	clear: right;
+	margin-left: 45%;
+	margin-top: 20%;
+	font-size: 70%;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	display: inline-block;	
+}
+	
+
+
+@keyframes themeAni2 {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+#pop {
+	float: right;
+	display: block;
+	border: 2px solid black;
+	border-radius: 25px;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
+	margin-right: 50%;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	width: 15%;
+	text-align: center;		
+	animation-name: pop;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+@keyframes pop {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+
+#pop::after{
+  content: '';
+  display: block;
+  position: relative;
+  left: 7%;
+  top: 15px;
+  width: 0;
+  height: 0;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-top: 15px solid black;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.headline {
+	display: block;
+	border: 2px solid black;
+	border-radius: 25px;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 22%;
+	text-align: center;	
+	animation-name: head;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+@keyframes head {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+.headline::after{
+  content: '';
+  display: block;
+  position: relative;
+  left: 42%;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid black;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+
+div.headline h3 {
+	font-size: 105%;
+	display: block;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+div.headline h4 {
+	margin-bottom: 3%;
+	margin-top: 1%;
+	margin-right: 1%;
+	margin-left: 1%;
+	font-size: 100%;
+}
+
+span.dot {
+	font-size: 25px;
+	color: red;
+	margin-right: 5px;
+	margin-left: 3px;
+}
+
+.list {
+	margin-left: 10%;
+	margin-top: 4%;
+	text-align: left;
+	float: left;
+	animation-name: list;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+@keyframes list {
+	from { transform: translateX(100%); }
+	100% { transform: translateX(0%); }
+}
+
+.list1, .list2, .list3 {
+	margin-bottom: 10%;
+	font-size: 100%;
+	padding-bottom: 5%;
+}
+	
+.comment {
+	text-align: left;
+}
+
+div.comment h3, p {
+	color: black;
+}
+
+div.comment p {
+	text-align: left;
+}
+
+.explanation {
+	margin-left: 5%;
+	font-size: 70%;
+	text-align: left;
+}
+
+#homeimg {
+	width: 15%;
+	height: 15%;
+	text-align: left;
+	float: left;
+}
+
+#view_time {
+	text-align: right;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+

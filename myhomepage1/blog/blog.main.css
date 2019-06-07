@@ -1,0 +1,22 @@
+.subtitle 
+{
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 3%;
+	margin-left: 3%;
+	padding: 0.25em 0.5em;
+	color: #494949;
+	background: transparent;
+ 	border-left: solid 5px #7db4e6;
+ 	}
+ 
+ #mainspace
+ {
+ 	border: 2px solid black;
+ 	float:left;
+ }
+
+#sidespace
+{
+	 border: 2px solid black;
+}

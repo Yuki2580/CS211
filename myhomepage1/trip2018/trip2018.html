@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Yuki Tagawa" content="冬旅行記">
+		<title>旅行記</title>
+		<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>			
+		<link rel="stylesheet" href="trip.css">	
+		<link rel="stylesheet" href="../template.css">
+		<link rel="stylesheet" href="galleria.classic.css">
+		<link href="lightbox.css" rel="stylesheet">
+		<script src="lightbox-plus-jquery.min.js"></script>
+		<script src="galleria-1.5.7.min.js"></script>
+        <script src="galleria.flickr.min.js"></script>	
+     
+    </head>
+	
+		<body>
+			<div class="headmenu">
+				
+				<div class="maintitle">YUトレブログ</div>			
+		
+				<ul id="title">
+							<li><a href=../myblog.html id="top" onmouseover ="change('white', 'grey', '105%')" onmouseout = "change('white', 'black', '100%')">TOP</a></li>
+							<li><a href=../profile/profile.html id="profile" onmouseover ="change3('white', 'grey', '105%')" 
+						    onmouseout = "change3('white', 'black', '100%')">Profile</a></li>	<li><a href=../blog/blog.html id="blog" onmouseover ="change2('white', 'grey', '105%')" 
+						    onmouseout = "change2('white', 'black', '100%')">Blog</a></li>
+				</ul>	
+			</div>		
+			
+		 <div class="content">
+          <!-- Adding gallery images. This is just a container for the dynamic flickr images -->
+        	<div id="galleria">
+       		 	<img src="picture/IMG_2984.jpeg">
+       		 	<img src="picture/IMG_8170.jpeg">
+       		 	<img src="picture/IMG_7691.jpeg">
+       		 	<img src="picture/IMG_7497.jpeg">        
+        	</div>            
+  	  </div>
+	
+		
+			<div class="explanation">
+				<div class="explahead">
+					<span class="empha">「</span>
+					<span class="text">旅を始めたきっかけとは？</span>
+					<span class="empha">」</span>
+				</div>
+				<p class="expla">
+					留学を機に世界をもっとみてみたくなった。実際に見てみないと凄さや感動というのは経験できない。<br>そしてもちろん危険は確かにあるが、冒険をしてこそ新しい感覚や目標を見つけていけるのではないか。<br>一人でも勇気を出して一歩踏み出してみる。それこそが旅のスタート。
+				</p>
+			</div>
+			
+			<hr>
+			
+		<div class="headPic">
+			<a href="IMG_9761.jpg" data-lightbox="IMG_9761"><img  id="proPic" src="IMG_9761.jpg"   height="250px" width="300px"></a>
+			
+			<a href="IMG_1443.jpeg" data-lightbox="IMG_1443"><img  id="proPic2" src="IMG_1443.jpeg" height="250px" width="300px"></a>
+			
+			<a href="IMG_1993.jpg" data-lightbox="IMG_1993"><img  id="proPic3" src="IMG_1993.jpg" height="250px" width="300px"></a>
+			
+			<a href="IMG_1952.jpeg" data-lightbox="IMG_1952"><img  id="proPic4" src="IMG_1952.jpeg" height="250px" width="300px"></a>
+		</div>	
+
+		<div class="blockPic">
+			<div class="picExpla">San Francisco</div>		
+			<div class="picExpla2">Antelope Canyon</div>
+			<div class="picExpla3">HollyWood</div>
+			<div class="picExpla4">MLB</div>
+		</div>
+		
+		<div class="attraction">皆さんはどこかへ「一人旅」をした経験はありますか？</div>
+		
+		<p class="attractExpla">一人の時でしか見えないもの。そういうものはきっとあるはずです。<br>
+		<span class="a1">ぜひやりたいことが、行きたいところがあるなら自分自身で行動してみましょう。</span><br>
+		<span class="a2">そうすれば何か新しいものが見えてきます。</span>
+		</p>
+		<hr>
+		
+		<p class="addition">旅行記についても更新していく予定です。このページでは写真などをシェアしていきたいなと考えています。	
+		</p>
+		
+			
+	 <script>    		 
+        Galleria.loadTheme('galleria.classic.min.js');
+        
+		option = {
+				width:  1430,              // 幅
+   				height: 600,              // 高さ
+  				imageCrop: true,          // 画像のクロップ有無
+    			// true：width/heightにフィットさせるように画像を切り取って表示
+    			// false：画像を全体表示させるように縮小
+    			transition: 'fade',       // 画像の遷移イフェクト
+    			_toggleInfo: false,       // imgのalt属性を取得してキャプションとして表示
+    			// true：キャプションの非表示 
+    			// false：キャプションの表示
+		}	   			     
+   			// Initialize Galleria
+        	Galleria.run('#galleria', option); 
+  	  </script> 
+  	       
+       <script src="tripjava.js"></script>
+	</body>
+	
+</html>
+	
